@@ -13,9 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('test', 'App\Http\Controllers\TestController@index');
+Route::get('/', 'App\Http\Controllers\TestController@index');
 Route::post('test', 'App\Http\Controllers\TestController@form')->name('test.form');
