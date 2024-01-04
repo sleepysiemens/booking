@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto+Flex:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html, body
+{
+    margin: auto;
+    width: 100%;
+    font-family: 'Montserrat';
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: #e5e7eb;
+}
+
+header
+{
+    width: 100%;
+    position: fixed;
+    height: 75px;
+    display: flex;
+    color: rgba(255,255,255,.75);
+    z-index: 100;
+
+}
+
+.container
+{
+    width: 95vw;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.justify-space-between
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav ul
+{
+    display: flex;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    height: 100%;
+}
+
+.nav-item
+{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.nav-item-a
+{
+    transition: .3s;
+    cursor: pointer;
+}
+
+.nav-item-a:hover
+{
+    color: rgba(0,0,255, .75);
+}
+
+.header-login
+{
+    display: flex;
+    border: solid 1px rgba(255,255,255,75);
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: auto 0;
+    transition: .3s;
+    cursor: pointer;
+
+    p
+    {
+        margin: auto;
+        margin-left: 5px;
+    }
+}
+
+.header-login:hover
+{
+    color: #4c4cfd;
+    border: solid 1px #4c4cfd;
+
+}
+
+.header-logo
+{
+    display: flex;
+
+    h4
+    {
+        margin: auto;
+    }
+}
+
+.bg-banner
+{
+    position: absolute;
+    width: 100%;
+    height: 35vh;
+    border-radius: 0 0 25px 25px;
+    z-index: -1;
+    box-shadow: 0px 4px 14px rgba(0,0,0,.25);
+    top: -150px;
+
+    background: rgb(2,0,36);
+    background: linear-gradient(200deg, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 65%, rgba(16,16,156,1) 100%);
+}
+
+main
+{
+    margin-top: 150px;
+    z-index: 1;
+    position: relative;
+}
+
+.absolute
+{
+    position: absolute;
+}
+
+.backlink
+{
+    color: rgba(255,255,255,.75);
+}
+
+.title
+{
+    color: #fff;
+    font-size: 2.5em;
+    margin-top: 25px;
+}
+
+.w-75
+{
+    width: 74%;
+}
+
+.w-25
+{
+    width: 24%;
+}
+
+.banner
+{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0px 4px 14px rgba(0,0,0,.25);
+    margin-bottom: 15px;
+}
+
+.banner-container
+{
+    width: calc(100% - 40px);
+    padding: 20px;
+    padding-bottom: 25px;
+}
+
+.row
+{
+    display: flex;
+}
+
+.circle-icon
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #9ca3af;
+    color: #4b5563;
+    display: flex;
+    opacity: .5;
+    overflow: hidden;
+
+    i
+    {
+        margin: auto;
+        font-size: 20px;
+    }
+}
+
+.ticket-title
+{
+    margin-left: 15px;
+    p
+    {
+        margin: auto;
+    }
+    h3
+    {
+        margin: auto;
+    }
+}
+
+.flight
+{
+    margin-top: 25px;
+    width: 25%;
+}
+
+.flight-date, .flight-place, .flight-number
+{
+    font-size: 14px;
+    margin: 0;
+}
+
+.flight-place, .flight-number
+{
+    opacity: .5;
+}
+
+.flight-number
+{
+    text-align: end;
+}
+
+.flight-time, .total-price
+{
+    font-weight: 300;
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.flight-arrow
+{
+    display: flex;
+    opacity: .2;
+
+    .line
+    {
+        display: block;
+        background-color: black;
+        height: 2px;
+        width: calc(100% - 20px);
+        margin: auto 0;
+    }
+
+    i
+    {
+        margin: auto 0;
+    }
+}
+
+.flight-length
+{
+    margin: 0;
+    text-align: end;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.transfer
+{
+    margin: 15px 0;
+    width: 100%;
+    background-color: rgba(0,0,0,.1);
+    border-radius: 15px;
+}
+
+.transfer-container
+{
+    width: calc(100% - 20px);
+    padding: 10px;
+    color: rgba(0,0,0,.5);
+
+    i
+    {
+        margin: auto;
+        font-size: 14px;
+    }
+}
+
+.transfer-p
+{
+    margin: 0;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.subtitle
+{
+    font-size: 14px;
+    color: rgba(0,0,0,.5);
+}
+
+.commons-input
+{
+    border: solid 1px rgba(0,0,0,.5);
+    border-radius: 15px;
+
+    legend
+    {
+        color: rgba(0,0,0,.5);
+    }
+
+    input, select, textarea
+    {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        border: none;
+        outline: none;
+        width: 100%;
+        background-color: #fff;
+        color: rgba(0,0,0,.75);
+    }
+}
+
+.w-45
+{
+    width: 45%;
+    margin: auto;
+}
+
+.w-30
+{
+    width: 29%;
+    margin: auto;
+}
+
+.w-a
+{
+    width: calc(100% - 1.5em);
+}
+
+.relative
+{
+    position: relative;
+}
+
+.ma
+{
+    margin: auto;
+}
+
+.mb-15
+{
+    margin-bottom: 25px;
+}
+
+.banner-header
+{
+    padding-bottom: 15px
+}
+
+footer
+{
+    background-color: #000034;
+    width: 100%;
+    margin-top: 50px;
+    height: 50px;
+}
+
+h3
+{
+    font-weight: 500;
+}
+
+.fixed
+{
+    position: fixed;
+    width: 24%;
+}
+
+.sep-line
+{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0,0,0,.25);
+    margin: 15px 0;
+}
+
+.total
+{
+    h2, h5, h3
+    {
+        margin: auto;
+    }
+
+    h2, h3
+    {
+        font-size: 20px;
+        margin: auto;
+    }
+}
+
+.or
+{
+    margin: 0;
+    font-size: 14px;
+    color: rgba(0,0,0,.25);
+}
+
+.warning
+{
+    color: chocolate;
+    font-size: 14px;
+
+    p, i
+    {
+        margin: auto 0;
+    }
+    p
+    {
+        margin-left: 5px;
+    }
+}
+
+.pay-btn
+{
+    background-color: #4c4cfd;
+    display: flex;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 45px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 100%;
+    transition: .3s;
+
+    p
+    {
+        margin: auto;
+        color: #fff;
+    }
+}
+
+.pay-btn:hover
+{
+    background-color: #6969fa;
+
+}
